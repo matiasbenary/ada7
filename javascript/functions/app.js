@@ -47,18 +47,26 @@ console.log("-------------------------");
 preprarTorta();
 
 
-
+// const nombreFuncion = parametros
+// parametros van a ser datos que voy a usar en mi función
+// pueden ser 0 a infinitos
+// van ser variables
+// podemos retornar algo
+// esto me permite seguir trabajando
 const calcularImpuestos = (item) => {
     return item * 1.25
 }
+// como usar(invocar,llamar) una funcion
+// habria que escribir el nobre de la funcion seguido de parentesis ej:calcularImpuestos()
 
 /*
 juguete 15
 jugueteConImpuesto 18.75
-
 const numero = prompt("ingrese un numero");
 */
 const juguete = 15;
+//Si la funcion retorna algo debo  guardarlo  en una variable
+//Si tiene parametros deberia completarlos
 const jugueteConImpuesto = calcularImpuestos(juguete);
 const autitos = calcularImpuestos(34)
 console.log(`sale el item ${juguete} y con impuesto ${jugueteConImpuesto},autito ${autitos}`);
@@ -69,8 +77,8 @@ const calcularDescuento = (item) =>{
     return item - item * 0.1
 }
 const comprarItem = (item) =>{
-    item = calcularImpuestos(item);
     item = calcularDescuento(item);
+    item = calcularImpuestos(item);
 }
 
 const item = Number(prompt("Ingrese el valor del item"));
